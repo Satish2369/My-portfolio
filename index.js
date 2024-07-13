@@ -2,7 +2,6 @@
 let name = document.querySelector("#Sm");
 let gola = document.querySelector("#follower");
 let frame = document.querySelector("#frame");
-
 let skillHeading= document.querySelector("#skill-heading");
 
 
@@ -100,17 +99,7 @@ speed.timeScale(0.5);
 
 }
 
-
-
-
-
-
-
-
 function  page2(){
-
-
-
 var t2 = gsap.timeline({scrollTrigger:{
   trigger:"#page2",
   // markers:true,
@@ -143,14 +132,6 @@ delay:0.8,
     }
 
       
-
-
-
-
-
-
-
-
     function animationpage3(){
 
      let tl = gsap.timeline({
@@ -230,20 +211,6 @@ delay:0.8,
   delay:-0.3
 })
 
-
-
-
-
-
-//mousefollower2
-
-
-
-
-
-
-
-
  }
 
 
@@ -252,9 +219,22 @@ delay:0.8,
 
 function skillAnim(){
 
+  gsap.from("#skill-heading h2",{
 
-
-
+    y:100,
+    opacity:0,
+    duration:0.4,
+    delay:0.3,
+    ease:"power",
+    scrollTrigger:{
+     trigger:"#page3",
+     scroller:"body",
+    //  markers:true,
+     start:"50% 50%",
+     end:"60% 50%",
+     scrub:true,
+    }
+ })
 
   skillHeading.addEventListener("mousemove",function(dets){
   gsap.to("#skill-heading h2",{
@@ -266,19 +246,10 @@ function skillAnim(){
 
   skillHeading.addEventListener("mouseleave",function(dets){
     gsap.to("#skill-heading h2",{
-  
      y:0,
      duration:0.6,
     })
     })
-
- // Mousemove event for skill heading to add underline animation
- 
-    
-  
-
-
-
 }
 
 

@@ -498,7 +498,6 @@ position: absolute;
   line-height: 1;
 }
 
-
 #my-skills{
   
   height: 100vh;
@@ -530,8 +529,3 @@ position: absolute;
   filter: blur(10px);
   opacity: 0;
 }
-#my-skills h2:hover{
-
-box-shadow: 5px 5px 10px 14px white;
-}
-
