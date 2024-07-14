@@ -230,8 +230,8 @@ function skillAnim(){
      trigger:"#page3",
      scroller:"body",
     //  markers:true,
-     start:"50% 50%",
-     end:"60% 50%",
+     start:"top 50%",
+     end:"30% 50%",
      scrub:true,
     }
  })
